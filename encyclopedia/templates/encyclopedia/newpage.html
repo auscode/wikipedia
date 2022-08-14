@@ -1,0 +1,23 @@
+{% extends 'encyclopedia/layout.html' %}
+<!--initiating the body block-->
+{% block body %} 
+
+{% if existing %}
+
+<!--alert section-->
+<div class="alert alert-danger" role="alert">
+  This title entry already exists.
+</div>
+<div class="alert alert-info" role="alert">
+  You can change the title entry down here to proceed.
+</div>
+{% endif %}
+<br />
+<!--content form section-->
+<div class="form-group">
+  <form action="{% url 'newentry' %}" method="post">
+    {% csrf_token %} {{ form.as_p }}
+    <input type="submit" value="submit" />
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends "encyclopedia/layout.html" %} {% block title %} {{ search_result }}
+{% endblock %} {% block body %}
+
+<h1>{{ key }}, Page not Found</h1>
+<a class="btn btn-dark" href="{{ key }}/edit" role="button"> Edit </a>
+{% endblock %}
