@@ -1,6 +1,7 @@
 # wikipedia
 Basic wikipedia type website
 
+working Structure and functionality check on [Youtube](https://youtu.be/luqu0E6F6Ss)
 
 
 ##all distribution zip file
